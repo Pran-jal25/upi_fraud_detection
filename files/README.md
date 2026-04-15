@@ -1,28 +1,13 @@
 ---
-title: UPI Fraud Detection API
+title: UPI Fraud Detection
 emoji: 🛡️
 colorFrom: blue
 colorTo: red
 sdk: docker
 pinned: false
+app_port: 7860
 ---
 
-# UPI Fraud Detection API
+# UPI Fraud Detection
 
-FastAPI backend for UPI transaction fraud detection using a trained ML model.
-
-## Endpoint
-
-`POST /predict`
-
-```json
-{
-  "txn_type": "PAYMENT",
-  "amount": 5000,
-  "step": 1,
-  "old_balance_orig": 10000,
-  "new_balance_orig": 5000,
-  "old_balance_dest": 0,
-  "new_balance_dest": 5000
-}
-```
+Full-stack UPI transaction fraud detection app built with React + FastAPI + XGBoost.

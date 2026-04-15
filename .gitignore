@@ -1,22 +1,14 @@
 # Python
 __pycache__/
 *.pyc
-*.pyo
-*.pyd
-.Python
-*.egg-info/
-dist/
-build/
 
-# Data & notebooks (large files)
+# Data & notebooks
 files/*.csv
 files/*.npy
 files/*.ipynb
 
-# Keep only the model needed for deployment
+# Keep only the model needed
 !files/fraud_pipeline.pkl
-
-# Other pkl files not needed
 files/best_model.pkl
 files/final_model.pkl
 

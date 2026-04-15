@@ -29,7 +29,7 @@ export default function App() {
     e.preventDefault();
     setLoading(true); setResult(null); setError("");
     try {
-      const res = await axios.post(`${import.meta.env.VITE_API_URL}/predict`, {
+      const res = await axios.post("/predict", {
         txn_type: form.txn_type,
         amount: parseFloat(form.amount),
         step: parseInt(form.step),
