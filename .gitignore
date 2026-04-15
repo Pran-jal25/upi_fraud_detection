@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# Data & notebooks (large files)
+files/*.csv
+files/*.npy
+files/*.ipynb
+
+# Keep only the model needed for deployment
+!files/fraud_pipeline.pkl
+
+# Other pkl files not needed
+files/best_model.pkl
+files/final_model.pkl
+
+# Node
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+
+# Misc
+.DS_Store
+*.log

@@ -1,0 +1,11 @@
+# Data files (large, not needed for deployment)
+*.csv
+*.npy
+*.ipynb
+
+# Keep model files
+!fraud_pipeline.pkl
+
+# Python cache
+__pycache__/
+*.pyc
